@@ -26,11 +26,18 @@
 
 /* We start writing our flexbox here. The above is just page setup */
 .flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
   border:10px solid goldenrod;
 }
 
 [class^="box"] {
-    
+    width: 30%
+  
 }
 
 .box1 {
@@ -38,7 +45,7 @@
 }
 
 .box2 {
-
+  flex-grow: 4;
 }
 .box3 {
 
@@ -47,16 +54,17 @@
 
 }
 .box5 {
-
+  order: 3;
+  flex-grow: 5;
 }
 .box6 {
-
+  flex-shrink: 0;
 }
 .box7 {
-
+  flex-grow: 3;
 }
 .box8 {
-
+  align-self: flex-end;
 }
 .box9 {
 
